@@ -1,0 +1,255 @@
+
+#map{
+  height: calc(100% - 72px);
+  width: calc(100% - 280px);
+  position: absolute;
+}
+
+aside {
+  width: 350px;
+  height:100%;
+  right: 0;
+  float: right;
+  z-index: 1;
+  padding: 0 15px;
+  position: relative;
+  background-color: #f9f9f9;
+  box-shadow: -2px 0px 2px 0px rgba(0,0,0,0.10);
+  overflow-y: auto;
+  -webkit-transition: right 0.15s;
+  -moz-transition: right 0.51s;
+  -o-transition: right 0.15s;
+  transition: right 0.15s;
+}
+
+aside.oculta {
+  right: -350px;
+}
+
+.width {
+    height: 100%;
+}
+
+#filters,
+#results {
+  cursor: pointer;
+}
+
+.panel-default {
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.10);
+}
+
+.panel {
+  margin-bottom: 15px;
+}
+
+.panel-body {
+  padding: 9px 10px;
+}
+
+.panel-body .badge {
+  float: right;
+  margin: 6px 0;
+}
+
+.panel-default.filter {
+  background-color: #ccc;
+}
+
+.panel-default.filter.on {
+  background-color: #fff;
+}
+
+.panel-default.filter:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.navbar-header {
+  width:100%;
+}
+
+button.navbar-toggle{
+  margin:15px;
+  font-size: 30px;
+  float:right;
+}
+
+.fa-bars {
+  font-size: 30px;
+  color: #888888;
+  margin:0px !;
+}
+
+/* Search box */
+#custom-search-input{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.10);
+}
+
+#custom-search-input input{
+  border: 0;
+  box-shadow: none;
+  height: 50px;
+  padding: 8px 15px;
+}
+
+#custom-search-input button{
+  margin: auto 0;
+  padding: 10px;
+  margin-right: 12px;
+  color: #0695d6;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+
+#custom-search-input button:hover{
+  border: 0;
+  box-shadow: none;
+}
+
+#custom-search-input .glyphicon-search{
+  font-size: 23px;
+}
+
+.fa-stack {
+  margin-right: 5px;
+}
+
+h4.title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.contact-bottom {
+  bottom: 10px;
+  position: relative;
+  display: block;
+  background-color: #f9f9f9;
+}
+
+
+/* Category colors  */
+#incubadoras .fa-circle {color:#EF4D3D;}
+#incubadoras .badge {background-color:#EF4D3D;}
+
+#nodos .fa-circle {color:#FEC221;}
+#nodos .badge {background-color:#FEC221;}
+
+#ciudades .fa-circle {color:#33B560;}
+#ciudades .badge {background-color:#33B560;}
+
+#clubes .fa-circle{color:#0695D6;}
+#clubes .badge {background-color:#0695D6;}
+
+
+/* Mapa-2 */
+
+.drop-map2   {
+  color: #0695D6;
+
+}
+
+.desactivado {
+  color: #D3D3D3;
+}
+
+#NoActivo .badge {
+  background: #D3D3D3; 
+}
+.back-desactivado {
+  background-color: #D3D3D3 !important;
+}
+
+
+.drop-map2 .span {
+  color:black !important;
+}
+
+.drop-map2 .badge {
+  background-color: #0695D6
+}
+
+
+.pan-drop {
+  font-size: 16px;
+  margin-bottom:2px !important;
+  padding:0px !important;
+  border-bottom: 2px rgba(0,0,0,0.10) !important;
+}
+
+.panel-default.pan-drop:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.negro {
+  color:black;
+}
+
+.fa-square {
+  font-size: 25px;
+}
+
+#tipo-emprend {
+  opacity:0.9;
+}
+
+#ciudades .panel-body:active {
+  color:white;
+}
+
+
+
+/* Cuando es lg y md */
+@media (min-width:768px) {
+    aside {
+      display:block !important;
+      width:350px !important;
+    }
+    aside.oculta {
+      right: 0;
+    }
+  }
+
+/* Cuando es sm */
+@media (max-width:768px) {
+  aside {
+    display: block;
+  }
+  #map {
+    width:100%;
+  }
+}
+
+/* Cuando es xs */
+@media (max-width: 480px) {
+  #map {
+    width: 100%;
+  }
+}
+
+button.navbar-toggle {
+    margin: 20px 15px;
+  }
+
+.expandir {
+  display:none;
+}
+
+/* Cuando es xs alto */
+@media (max-height: 400px) {
+  .expandir {
+    display: block;
+  }
+
+  .filtros {
+    display:none;
+  }
+}
+
+
